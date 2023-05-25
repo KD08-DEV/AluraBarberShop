@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Productos - Barberia Alura</title>
+    <link rel="stylesheet" href="reset.css"> <!--Este codigo siempre debe ir antes del style porque sino lo resetea el style-->
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <header>
+            <div class="caja">
+                <h1><img src="Asset/logo.png"></h1>
+            
+                <nav>
+                    <ul>
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <form>
+                <label for="nombreapellido">Nombre y Apellido</label>
+                <input type="text" id="nombreapellido" class="input-padron" required placeholder="email@dominio.com">
+
+                <label for="correo">Correo Electronico</label>
+                <input type="email" id="correo" class="input-padron" required placeholder="(xxx) xxx- xxxx">
+
+                <label for="telefono">Telefono</label>
+                <input type="text" id="telefono" class="input-padron" required>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" class="input-padron"></textarea required>
+
+                <fieldset>
+                    <legend>Como le gustaria que lo contactemos</legend>
+
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                    
+
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Telefono</label>
+                    
+
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-Whatsapp" checked>Whatsapp</label>
+                    
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>En que hora desea ser contactado?</legend>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </fieldset>
+
+                <label><input type="checkbox" checked>Le gustaria recibir novedades de la Barberia Alura?</label>
+
+                <input type="submit" value="Enviar Formulario" class="enviar">
+            </form>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dias</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Miercoles</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </main>
+        <footer>
+            <img src="Asset/logo-blanco.png">
+            <p class="CopyRight">&copy CopyRight Barberia Alura</p>
+        </footer>
+    </body>
+</html>
